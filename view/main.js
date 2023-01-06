@@ -50,10 +50,10 @@ if (!itemFromDb) {
     //     location.href = "/list/"
     // });
 
-    // deleteBtn.addEventListener('click', () => {
-    //     // TODO: post to server with deleted id
-    //     location.href = "/list/"
-    // });
+    deleteBtn.addEventListener('click', () => {
+        // TODO: post to server with deleted id
+        location.href = "../list/"
+    });
 
     document.querySelector("#viewer").style.display = '';
 }

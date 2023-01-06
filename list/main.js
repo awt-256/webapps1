@@ -7,7 +7,7 @@ const appendToList = ({id=-1, name="(unnamed)", desc="", count=0}, register=true
     // empty spacer...
     // TODO: Auto space with some sort of grid css stuff
     trow.appendChild(document.createElement("td")).innerHTML = `
-<a href="/view#id=${id}" class="btn-floating btn-small purple waves-effect waves-light">
+<a href="../view#id=${id}" class="btn-floating btn-small purple waves-effect waves-light">
     <i class="material-icons">info</i>
 </a>`;
     // name
@@ -30,7 +30,7 @@ const registerItem = (trow) => {
     // deletion button
     trow.querySelector(".delete-item-btn").addEventListener('click', () => {
         // TODO: post to server with deleted id
-        location.href = "/list/"
+        location.reload();
     });
 }
 
